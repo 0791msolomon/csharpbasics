@@ -11,5 +11,9 @@ namespace HelloWorld
         {
             Console.WriteLine("Hello my name is "+firstName +" " + lastName + " and I'm " +age+ " years old");
         }
+        public void test (string first, string second)
+        {
+            Console.WriteLine(first +" " + second);
+        }
     }
 }
