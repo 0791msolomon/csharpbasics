@@ -1,37 +1,27 @@
 ﻿using System;
 namespace HelloWorld
 {
-
     class Program
     {
         static void Main(string[] args)
         {
-            /* Exercises exerciseOne = new Exercises();
-             exerciseOne.Exercise1();
 
-             Exercises exerciseTwo = new Exercises();
-             exerciseTwo.Exercise2();
+            /*  var random = new Random();
+              var arr = new char[10];
+              const int passwordLength = 10;
+              for (var i = 0; i < passwordLength; i++)
+              {
+                  arr[i] = (char)('a' + random.Next(0, 26));
+                  var password = new string(arr);
+                  Console.WriteLine(password);    
+              }*/
+            Exercises2 exercises = new Exercises2();
+            /*exercises.exerciseOne();*/
+            /* exercises.exerciseTwo();*/
+            exercises.exerciseThree();
+         }
 
-             Exercises  exerciseThree = new Exercises();
-             exerciseThree.Exercise3();
-
-             Exercises  exerciseFour = new Exercises();
-             exerciseFour.Exercise4();*/
-
-            /* Test newTest = new Test();
-             newTest.Exercise4();*/
-
-            Iteration first = new Iteration();
-            /*first.forLoop();*/
-            /* first.ForEachh();
-             first.ForEachArray();*/
-            /*            first.whileLoop();
-            */
-            first.checkString();
-            }
-        }
-
-
+    }
 
     }
  
