@@ -6,8 +6,9 @@ namespace HelloWorld
         static void Main(string[] args)
         {
 
-            Arrays test = new Arrays();
-            test.practice();
+            Lists practice = new Lists();
+            practice.exercise();
+
          }
 
     }
