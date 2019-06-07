@@ -64,18 +64,18 @@ namespace HelloWorld
         }
         public void exerciseFive()
         {
-            Console.WriteLine("enter a series of numbers separated by commas");
-            var numbers = Console.ReadLine();
-            var splitNumbers = numbers.Split(',');
+            Console.WriteLine("Enter as many numbers as you'd like separated by commas");
+            var response = Console.ReadLine();
+            var splitNumbers = response.Split(','); 
             var max = Convert.ToInt32(splitNumbers[0]);
             foreach(var number in splitNumbers)
             {
-                if(Convert.ToInt32(number) > max)
+                if (Convert.ToInt32(number) > max)
                 {
                     max = Convert.ToInt32(number); 
                 }
             }
-            Console.WriteLine("the max number of all entered numbers is "+max);
+            Console.WriteLine("your max number entered was "+max);
 
         }
         

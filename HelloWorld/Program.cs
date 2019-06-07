@@ -6,8 +6,8 @@ namespace HelloWorld
         static void Main(string[] args)
         {
 
-            var exercises = new Exercises2();
-            exercises.exerciseFive();
+            Arrays test = new Arrays();
+            test.practice();
          }
 
     }
