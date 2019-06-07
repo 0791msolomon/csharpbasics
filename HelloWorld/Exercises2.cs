@@ -35,14 +35,15 @@ namespace HelloWorld
         {
             Console.WriteLine("enter any number");
             var response = Convert.ToInt32(Console.ReadLine());
-            var first = Convert.ToInt32(Console.ReadLine()); 
-             int answer=1;
+           var copyInt = response;
+            var total = 1;
+
             do
             {
-                answer *= response;
+                total *= response;
                 response--;
             } while (response > 0);
-            Console.WriteLine(first+'!'+ " ="+answer);
+            Console.WriteLine(copyInt+"!="+total);
         }
     }
   
