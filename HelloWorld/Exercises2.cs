@@ -1,6 +1,7 @@
 ﻿using System;
 namespace HelloWorld
 {
+ 
     public class Exercises2{
         public void exerciseOne()
         {
@@ -45,6 +46,40 @@ namespace HelloWorld
             } while (response > 0);
             Console.WriteLine(copyInt+"!="+total);
         }
+        public void exerciseFour()
+        {
+            var random = new Random().Next(1,10);
+            for(var i =0; i < 4; i++)
+            {
+                Console.WriteLine("Try and guess the secret number: ");
+                var guess = Convert.ToInt32(Console.ReadLine());
+
+                if (guess == random)
+                {
+                    Console.WriteLine("You won!");
+                    return;
+                }
+            }
+            Console.WriteLine("sorry you lost");
+        }
+        public void exerciseFive()
+        {
+            Console.WriteLine("enter a series of numbers separated by commas");
+            var numbers = Console.ReadLine();
+            var splitNumbers = numbers.Split(',');
+            var max = Convert.ToInt32(splitNumbers[0]);
+            foreach(var number in splitNumbers)
+            {
+                if(Convert.ToInt32(number) > max)
+                {
+                    max = Convert.ToInt32(number); 
+                }
+            }
+            Console.WriteLine("the max number of all entered numbers is "+max);
+
+        }
+        
+
     }
   
 
