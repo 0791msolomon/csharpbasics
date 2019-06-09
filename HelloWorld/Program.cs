@@ -5,11 +5,9 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-
-            Lists practice = new Lists();
-            practice.exercise();
-
-         }
+            Exercises3 practice = new Exercises3();
+            practice.exercise5();
+          }
 
     }
 
