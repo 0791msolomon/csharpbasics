@@ -5,10 +5,8 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-
-            datesClass practice = new datesClass();
-            practice.practice();
-
+            stringClass practice = new stringClass();
+            practice.liveCoding(); 
         }
     }
 
