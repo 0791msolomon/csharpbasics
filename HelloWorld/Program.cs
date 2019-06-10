@@ -5,8 +5,8 @@ namespace HelloWorld
     {
         static void Main(string[] args)
         {
-            Exercises3 practice = new Exercises3();
-            practice.exercise5();
+            allExercises practice = new allExercises();
+            practice.exercise14(); 
           }
 
     }
