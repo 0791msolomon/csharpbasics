@@ -87,27 +87,36 @@ namespace HelloWorld
         }
         public void exercise4()
         {
-            Console.WriteLine("enter a few words separated by a space");
-            var split = Console.ReadLine().Split(" ");
-            var arr = new List<string>(); 
-            var i = 0; 
-            foreach(var n in split)
+            Console.WriteLine("enter a few words separated by spaces");
+            var response = Console.ReadLine();
+            if (string.IsNullOrWhiteSpace(response))
             {
-                arr.Add(n.ToUpper()); 
+                return; 
             }
-            foreach(var n in arr)
+            var answer = ""; 
+            foreach(var word in response.Split(" "))
             {
-                Console.WriteLine(n);
+                var subword = char.ToUpper(word[0]) + word.Substring(1).ToLower();
+                answer += subword;
             }
+            Console.WriteLine(answer);
+            
         }
 
         public void exercise5()
         {
-            Console.WriteLine("enter any single word");
-            var split = Console.ReadLine().Split(""); 
-            foreach(var letter in split){
-                Console.WriteLine(letter);
+            Console.WriteLine("enter any word");
+            var vowels = new List<char>() { 'a', 'e', 'i', 'o', 'u' };
+            var response = Console.ReadLine();
+            var count = 0; 
+            foreach(var letter in response)
+            {
+                if (vowels.Contains(letter))
+                {
+                    count += 1; 
+                }
             }
+            Console.WriteLine(count);
         }
     }
 }
