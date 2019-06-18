@@ -7,7 +7,7 @@ namespace HelloWorld
         static void Main(string[] args)
         {
             ProceduralProgramming practice = new ProceduralProgramming();
-            practice.first(); 
+            practice.fourth(); 
  
         }
 
