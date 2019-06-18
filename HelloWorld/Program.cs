@@ -1,13 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
 namespace HelloWorld
 {
     class Program
     {
         static void Main(string[] args)
         {
-            exercises4 practice = new exercises4();
-            practice.exercise5(); 
-         }
+            ProceduralProgramming practice = new ProceduralProgramming();
+            practice.first(); 
+ 
+        }
+
+       
+       
+  
+ 
     }
 
     }
