@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
+
 namespace HelloWorld
 {
     public class ProceduralProgramming
@@ -92,21 +94,41 @@ namespace HelloWorld
                 return false; 
         }
          
-        public void fourth()
+       public void fourth()
         {
-            Console.WriteLine("enter a few words separated bya space");
-            var response = Console.ReadLine().ToLower();
-            Console.WriteLine(response);
+            Console.WriteLine("enter words separated by spaces");
+            var response = Console.ReadLine();
+            var final = Pascal(response);
+            Console.WriteLine(final);
         }
-        public static string pascalCase(string word)
+        public static String Pascal(string sentence)
         {
-            var pascal = new List<string>();
-            var split = word.Split(' '); 
-            foreach(var w in split){
-                var answer = "";
-                Console.WriteLine(w);
+            var answer = ""; 
+            foreach(var word in sentence.Split(" ")){
+                var subword = char.ToUpper(word[0]) + word.Substring(1).ToLower();
+                answer += subword; 
             }
-            return "hi";
+            return answer; 
+        }
+        public void fifth()
+        {
+            Console.WriteLine("enter an english word");
+            var response = Console.ReadLine();
+            var final = Counter(response);
+            Console.WriteLine(final);
+        }
+        public static Int32 Counter (String word)
+        {
+            var vowels = new List<char>() { 'a', 'e', 'i', 'o', 'u' };
+            var count = 0; 
+            foreach(var letter in word)
+            {
+                if (vowels.Contains(letter))
+                {
+                    count += 1; 
+                }
+            }
+            return count; 
         }
     }
 
